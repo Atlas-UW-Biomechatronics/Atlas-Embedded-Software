@@ -17,6 +17,8 @@ class Atlas_Pressure_Sensor{
 		bool isItTouching();
 
 	};
+
+		int[] resistance_;
 		//Find out whether or not the values are changing throughout.
 		int changeInResistance(int[] resistance);
 		int changeInResistance(int[] resistance, SensorState* state);
