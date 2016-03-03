@@ -1,0 +1,1 @@
+-two calibration settings (one for foot in the air, one for foot planted)
