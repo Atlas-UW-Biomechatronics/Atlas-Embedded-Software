@@ -1,36 +1,32 @@
 //Header file to be used to develop the further library
 
-#ifenddef Atlas_Touch
-#define Atlas_Touch
+#ifenddef Atlas_Pressure_Sensor
+#define Atlas_Pressure_Sensor
 
-class Atlas_Touch{
-	
-	public:
-		//Different functions that are used in terms of figuring out what happens in the process.
+class Atlas_Pressure_Sensor{
 
-		void startPressureMonitor(double* force, int* );
-		//Figure out whether or not the values are increasing 
-		bool increasing(unsigned int resistance);
+	class SensorState{
+		int RoC; //value that we get from the function defined in before.
+		bool isTouching;
 
-		//Return true if the resistance values are decreasing
-		bool decreasing(unsigned int resistance);
+		SensorState();
+		~SensorState();
+		SensorState(unsigned int nRoC, bool isTouchingNow);
 
-		//Return true if it is in contact with the ground.
-		bool ground(unsigned int resistance);
+		int getRoC();
+		bool isItTouching();
 
-		//return true if it is not in contact with the round.
-		bool notOnGround(unsigned int resistance);
+	};
+		//Find out whether or not the values are changing throughout.
+		int changeInResistance(int[] resistance);
+		int changeInResistance(int[] resistance, SensorState* state);
 
-
+		//Checking whether or not the foot is on the ground
+		bool onGround(int[] resistance);
+		bool onGround(int[] resistance, SensorState* state);
 
 		//return the force that is applied to the system
 		int getForce(unsigned int resistance, unsigned int voltage);
-
-	private:
-
-	private:
-		//Any different types of variables that are needed in the library.
-		int voltage_, resistance_, force_;
 
 };
 
