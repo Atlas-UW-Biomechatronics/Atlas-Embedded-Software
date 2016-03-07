@@ -1,13 +1,15 @@
 //Header file to be used to develop the further library
 
-#ifenddef Atlas_Pressure_Sensor
-#define Atlas_Pressure_Sensor
+#ifndef ATLAS_PRESSURE_SENSOR
+#define ATLAS_PRESSURE_SENSOR
 
 class Atlas_Pressure_Sensor{
 
 	class SensorState{
 		int RoC; //value that we get from the function defined in before.
 		bool isTouching;
+        
+    public:
 
 		SensorState();
 		~SensorState();
@@ -19,6 +21,8 @@ class Atlas_Pressure_Sensor{
 	};
 
 		int[] resistance_;
+    
+    public:
 		//Find out whether or not the values are changing throughout.
 		int changeInResistance(int[] resistance);
 		int changeInResistance(int[] resistance, SensorState* state);
