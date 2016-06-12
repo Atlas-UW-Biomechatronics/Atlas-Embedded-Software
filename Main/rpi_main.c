@@ -4,6 +4,8 @@
 #include <stdint.h>
 //use option -std=c99
 
+volatile bool FORCE_STOP = false;
+
 void* thread_function1(void* arg) {
 	uint8_t i;
 	for (i = 0; i < 15; i++) {
@@ -26,6 +28,17 @@ void* thread_function3(void* arg) {
 
 }
 
+void* timing_foot1() {
+	while (FORCE_STOP == false) {
+		//send signal to indicate no pressure
+		while (/*no heel pressure*/);
+		//send signal to incicate heelstrike
+		while (/*heel pressure increasing*/);
+		//function to determine definite decrease in pressure
+		//actuate, reverse-actuate
+	}
+}	//timing_foot1()
+
 int main (int argc, char argv[]) {
 	//wiringPiSetup();
 
@@ -39,7 +52,7 @@ int main (int argc, char argv[]) {
 	char *p2 = "b";
 	char *p3 = "c";
 
-	thread_return1 = pthread_create(&(threads[0]), NULL, thread_function1, NULL);
+	thread_return1 = pthread_create(&threads[0], NULL, thread_function1, NULL);
 	thread_return2 = pthread_create(&threads[1], NULL, thread_function2, NULL);
 	thread_return3 = pthread_create(&threads[2], NULL, thread_function3, NULL);
   	
