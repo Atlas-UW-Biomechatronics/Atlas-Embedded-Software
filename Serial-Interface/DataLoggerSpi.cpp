@@ -3,60 +3,108 @@
 
 using namespace std;
 
-int DataLoggerSpi::spiOpen(std::string devspi) {
-    int statusVal = -1;
-    this->spifd = open(devspi.c_str(), O_RDWR);
-    if(this->spifd < 0){
-        perror("could not open SPI device");
-        exit(1);
-    }
+DataLoggerSpi::DataLoggerSpi()
+{
+    /* Open Spi Device */
+    string devPath = "/dev/spidev0.0";
+    if (spiOpen(devPath) < 0)
+        exit(-1);
+    
+    /*Set Spi Settings*/
+    mode = SPI_MODE_3;
+    bitsPerWord = 8;
+    speed = 1000000;
+    justification = 1;
 
-    statusVal = ioctl (this->spifd, SPI_IOC_WR_MODE, &(this->mode));
-    if(statusVal < 0){
-        perror("Could not set SPIMode (WR)...ioctl fail");
-        exit(1);
-    }
-
-    statusVal = ioctl (this->spifd, SPI_IOC_RD_MODE, &(this->mode));
-    if(statusVal < 0) {
-      perror("Could not set SPIMode (RD)...ioctl fail");
-      exit(1);
-    }
-
-    statusVal = ioctl (this->spifd, SPI_IOC_WR_BITS_PER_WORD, &(this->bitsPerWord));
-    if(statusVal < 0) {
-      perror("Could not set SPI bitsPerWord (WR)...ioctl fail");
-      exit(1);
-    }
-
-    statusVal = ioctl (this->spifd, SPI_IOC_RD_BITS_PER_WORD, &(this->bitsPerWord));
-    if(statusVal < 0)
-    {
-      perror("Could not set SPI bitsPerWord(RD)...ioctl fail");
-      exit(1);
-    }
-
-    statusVal = ioctl (this->spifd, SPI_IOC_WR_MAX_SPEED_HZ, &(this->speed));
-    if(statusVal < 0) {
-      perror("Could not set SPI speed (WR)...ioctl fail");
-      exit(1);
-    }
-
-    statusVal = ioctl (this->spifd, SPI_IOC_RD_MAX_SPEED_HZ, &(this->speed));
-    if(statusVal < 0) {
-      perror("Could not set SPI speed (RD)...ioctl fail");
-      exit(1);
-    }
-    return statusVal;
+    /*Configure Clock Phase and Clock Polarity*/
+    if (ioctl(this->spifd, SPI_IOC_WR_MODE, &mode) < 0)
+        printf("Could not set Clock Phase / Polarity");
+    /*Configure Justifcation (!=0 -> LSB, ==0 -> MSB)*/
+    if (ioctl(this->spifd, SPI_IOC_WR_LSB_FIRST, &justification) < 0);
+        printf("Could not set justification");
+    /*Configure Bits Per Word*/
+    if (ioctl(this->spifd, SPI_IOC_WR_BITS_PER_WORD, &bitsPerWord) < 0)
+        printf("Could not set Bits Per Word");
+    /*Configure max speed*/
+    if (ioctl(this->spifd, SPI_IOC_WR_MAX_SPEED_HZ, &speed) < 0)
+        printf("Could not set the speed");
 }
 
-int DataLoggerSpi::spiClose(){
-    int statusVal = -1;
-    statusVal = close(this->spifd);
-        if(statusVal < 0) {
-      perror("Could not close SPI device");
-      exit(1);
-    }
-    return statusVal;
+DataLoggerSpi::DataLoggerSpi(std::string devPath, uint8_t mode, uint8_t bitsPerWord, uint32_t speed, uint8_t justification)
+{
+    /* Open Spi Device */
+    if (spiOpen(devPath) < 0)
+        exit(-1);
+    
+    this->mode = mode;
+    this->bitsPerWord = bitsPerWord;
+    this->speed = speed;
+    this->justification = justification;
+
+    /*Configure Clock Phase and Clock Polarity*/
+    if (ioctl(this->spifd, SPI_IOC_WR_MODE, &mode) < 0)
+        printf("Could not set Clock Phase / Polarity");
+    /*Configure Justifcation (!=0 -> LSB, ==0 -> MSB)*/
+    if (ioctl(this->spifd, SPI_IOC_WR_LSB_FIRST, &justification) < 0);
+        printf("Could not set justification");
+    /*Configure Bits Per Word*/
+    if (ioctl(this->spifd, SPI_IOC_WR_BITS_PER_WORD, &bitsPerWord) < 0)
+        printf("Could not set Bits Per Word");
+    /*Configure max speed*/
+    if (ioctl(this->spifd, SPI_IOC_WR_MAX_SPEED_HZ, &speed) < 0)
+        printf("Could not set the speed");
 }
 
+int DataLoggerSpi::spiWriteRead(unsigned char *tdata, unsigned char *rdata)
+{
+    struct spi_ioc_transfer *message;
+    message->tx_buf = (unsigned long)tdata;
+    message->rx_buf = (unsigned long)rdata;
+    message->len = sizeof(unsigned char);
+    message->speed_hz = this->speed;
+    message->bits_per_word = this->bitsPerWord;
+    message->delay_usecs = 0;
+    message->cs_change = 1;
+   return ioctl(this->spifd, SPI_IOC_MESSAGE(1), message);
+}
+
+int DataLoggerSpi::spiWrite(unsigned char *tdata)
+{
+    struct spi_ioc_transfer *message;
+    message->tx_buf = (unsigned long)tdata;
+    message->rx_buf = (unsigned long)NULL;
+    message->len = sizeof(unsigned char);
+    message->speed_hz = this->speed;
+    message->bits_per_word = this->bitsPerWord;
+    message->delay_usecs = 0;
+    message->cs_change = 1;
+    return ioctl(this->spifd, SPI_IOC_MESSAGE(1), message);
+}
+
+int DataLoggerSpi::spiRead(unsigned char *rdata)
+{
+    struct spi_ioc_transfer *message;
+    message->tx_buf = (unsigned long)NULL;
+    message->rx_buf = (unsigned long)rdata;
+    message->len = sizeof(unsigned char);
+    message->speed_hz = this->speed;
+    message->bits_per_word = this->bitsPerWord;
+    message->delay_usecs = 0;
+    message->cs_change = 1;
+    return ioctl(this->spifd, SPI_IOC_MESSAGE(1), message);
+}
+
+
+int DataLoggerSpi::spiOpen(std::string devPath)
+{
+    char *spiDev = (char*)devPath.c_str();
+    if (this->spifd = open(spiDev, O_RDWR) < 0)
+        return -1;
+    else
+        return 1;
+}
+
+int DataLoggerSpi::spiClose()
+{
+    return close(this->spifd);
+}
