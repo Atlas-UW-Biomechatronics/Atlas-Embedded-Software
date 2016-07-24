@@ -1,0 +1,112 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ATLAS_PRESSURE_SENSOR	In Development/Atlas_Touch/Atlas_Touch.hpp	4;"	d
+Atlas	Main/atlas.c	/^} Atlas;$/;"	v	typeref:struct:__anon1
+Atlas_Pressure_Sensor	In Development/Atlas_Touch/Atlas_Touch.hpp	/^class Atlas_Pressure_Sensor{$/;"	c
+Atlas_vtable	Main/atlas.c	/^} Atlas_vtable;/;"	v	typeref:struct:__anon2
+BCM2835_PERI_BASE	Serial-Interface/RaspberrySPi.cpp	6;"	d	file:
+BLOCK_SIZE	Serial-Interface/RaspberrySPi.cpp	9;"	d	file:
+DATALOGGERSPI_H	Serial-Interface/DataLoggerSpi.h	2;"	d
+DEVICE_H	Main/atlas.h	2;"	d
+DataLoggerSpi	Serial-Interface/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLoggerSpi()$/;"	f	class:DataLoggerSpi
+DataLoggerSpi	Serial-Interface/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLoggerSpi(std::string devPath, uint8_t mode, uint8_t bitsPerWord, uint32_t speed, uint8_t justification)$/;"	f	class:DataLoggerSpi
+DataLoggerSpi	Serial-Interface/DataLoggerSpi.h	/^class DataLoggerSpi{$/;"	c
+FORCE_STOP	Main/rpi_main.c	/^volatile bool FORCE_STOP = false;$/;"	v
+GPIO_OFFSET	Serial-Interface/RaspberrySPi.cpp	7;"	d	file:
+HBridge	Main/Older/HBridge_Control.cpp	/^HBridge::HBridge() {$/;"	f	class:HBridge
+HBridge	Main/Older/HBridge_Control.h	/^class HBridge {$/;"	c
+LSB_FIRST	Serial-Interface/DataLoggerSpi.h	15;"	d
+Leg	Main/Older/Atlas_Leg.cpp	/^Leg::Leg() {$/;"	f	class:Leg
+Leg	Main/Older/Atlas_Leg.h	/^class Leg { $/;"	c
+MSB_FIRST	Serial-Interface/DataLoggerSpi.h	14;"	d
+MULTICONSOLE	Print-Consoles/multiconsole.h	2;"	d
+N_SPI_MINORS	Serial-Interface/spidev.cpp	51;"	d	file:
+RaspberrySPi	Serial-Interface/RaspberrySPi.cpp	/^class RaspberrySPi $/;"	c	file:
+RoC	In Development/Atlas_Touch/Atlas_Touch.hpp	/^		int RoC; \/\/value that we get from the function defined in before.$/;"	m	class:Atlas_Pressure_Sensor::SensorState
+SPIDEV_MAJOR	Serial-Interface/spidev.cpp	50;"	d	file:
+SPI_MODE_MASK	Serial-Interface/spidev.cpp	68;"	d	file:
+SPI_OFFSET	Serial-Interface/RaspberrySPi.cpp	8;"	d	file:
+SensorState	In Development/Atlas_Touch/Atlas_Touch.hpp	/^	class SensorState{$/;"	c	class:Atlas_Pressure_Sensor
+Sensor_State	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::Sensor_State(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
+Sensor_State	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::Sensor_State(int nRoC, bool isTouchingNow){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
+_ATLAS_LEG_	Main/Older/Atlas_Leg.h	4;"	d
+_HBRIDGE_CONTROL_	Main/Older/HBridge_Control.h	4;"	d
+backward	Main/Older/HBridge_Control.cpp	/^void HBridge::backward() {$/;"	f	class:HBridge
+base_addr	Serial-Interface/RaspberrySPi.cpp	/^        uint32_t *base_addr = (uint32_t*)MAP_FAILED;$/;"	m	class:RaspberrySPi	file:
+bitsPerWord	Serial-Interface/DataLoggerSpi.h	/^        uint8_t bitsPerWord;$/;"	m	class:DataLoggerSpi
+buf_lock	Serial-Interface/spidev.cpp	/^	struct mutex		buf_lock;$/;"	m	struct:spidev_data	typeref:struct:spidev_data::mutex	file:
+bufsiz	Serial-Interface/spidev.cpp	/^static unsigned bufsiz = 4096;$/;"	v	file:
+changeInResistance	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::changeInResistance(int[] resistance){$/;"	f	class:Atlas_Pressure_Sensor
+changeInResistance	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::changeInResistance(int[] resistance, Sensor_State state*){$/;"	f	class:Atlas_Pressure_Sensor
+currentDateTime	Print-Consoles/multiconsole.h	/^const string currentDateTime() {$/;"	f
+device_entry	Serial-Interface/spidev.cpp	/^	struct list_head	device_entry;$/;"	m	struct:spidev_data	typeref:struct:spidev_data::list_head	file:
+devt	Serial-Interface/spidev.cpp	/^	dev_t			devt;$/;"	m	struct:spidev_data	file:
+forward	Main/Older/HBridge_Control.cpp	/^void HBridge::forward() {$/;"	f	class:HBridge
+getForce	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::getForce(unsigned int resistance, unsigned int voltage){$/;"	f	class:Atlas_Pressure_Sensor
+getRoC	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::getRoC(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
+isForward	Main/Older/HBridge_Control.cpp	/^bool HBridge::isForward() {$/;"	f	class:HBridge
+isForward	Main/Older/HBridge_Control.h	/^	bool isForward;$/;"	m	class:HBridge
+isItTouching	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::isItTouching(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
+isOn	Main/Older/HBridge_Control.cpp	/^bool HBridge::isOn() {$/;"	f	class:HBridge
+isOn	Main/Older/HBridge_Control.h	/^	bool isOn;$/;"	m	class:HBridge
+isTouching	In Development/Atlas_Touch/Atlas_Touch.hpp	/^		bool isTouching;$/;"	m	class:Atlas_Pressure_Sensor::SensorState
+justification	Serial-Interface/DataLoggerSpi.h	/^        uint8_t justification;$/;"	m	class:DataLoggerSpi
+loop	Main/Older/Main.c	/^void loop() {$/;"	f
+main	Main/rpi_main.c	/^int main (int argc, char argv[]) {$/;"	f
+main	Print-Consoles/testing.cpp	/^int main () {$/;"	f
+mode	Serial-Interface/DataLoggerSpi.h	/^        uint8_t mode;$/;"	m	class:DataLoggerSpi
+onGound	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::onGound(int resistance){$/;"	f	class:Atlas_Pressure_Sensor
+onGound	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::onGound(int resistance, Sensor_State* state){$/;"	f	class:Atlas_Pressure_Sensor
+pin1	Main/Older/HBridge_Control.h	/^	int pin1; \/\/an example of a class variable. This can store one analog pin that the HBridge uses to function$/;"	m	class:HBridge
+printToConsole	Print-Consoles/multiconsole.h	/^void printToConsole(string output, ofstream& console) {$/;"	f
+resistance_	In Development/Atlas_Touch/Atlas_Touch.hpp	/^		int[] resistance_;$/;"	m	class:Atlas_Pressure_Sensor
+rx_buffer	Serial-Interface/spidev.cpp	/^	u8			*rx_buffer;$/;"	m	struct:spidev_data	file:
+setup	Main/Older/Main.c	/^void setup() {$/;"	f
+setupConsoles	Print-Consoles/multiconsole.h	/^void setupConsoles(ofstream* console, int console_num, string terminal) {$/;"	f
+speed	Serial-Interface/DataLoggerSpi.h	/^        uint32_t speed;$/;"	m	class:DataLoggerSpi
+speed_hz	Serial-Interface/spidev.cpp	/^	u32			speed_hz;$/;"	m	struct:spidev_data	file:
+spi	Serial-Interface/spidev.cpp	/^	struct spi_device	*spi;$/;"	m	struct:spidev_data	typeref:struct:spidev_data::spi_device	file:
+spiClose	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiClose()$/;"	f	class:DataLoggerSpi
+spiOpen	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiOpen(std::string devPath)$/;"	f	class:DataLoggerSpi
+spiRead	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiRead(unsigned char *rdata)$/;"	f	class:DataLoggerSpi
+spiWrite	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiWrite(unsigned char *tdata)$/;"	f	class:DataLoggerSpi
+spiWriteRead	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiWriteRead(unsigned char *tdata, unsigned char *rdata)$/;"	f	class:DataLoggerSpi
+spi_lock	Serial-Interface/spidev.cpp	/^	spinlock_t		spi_lock;$/;"	m	struct:spidev_data	file:
+spidev_compat_ioc_message	Serial-Interface/spidev.cpp	/^spidev_compat_ioc_message(struct file *filp, unsigned int cmd,$/;"	f	file:
+spidev_compat_ioctl	Serial-Interface/spidev.cpp	/^spidev_compat_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:
+spidev_compat_ioctl	Serial-Interface/spidev.cpp	578;"	d	file:
+spidev_data	Serial-Interface/spidev.cpp	/^struct spidev_data {$/;"	s	file:
+spidev_dt_ids	Serial-Interface/spidev.cpp	/^static const struct of_device_id spidev_dt_ids[] = {$/;"	v	typeref:struct:of_device_id	file:
+spidev_exit	Serial-Interface/spidev.cpp	/^module_exit(spidev_exit);$/;"	v
+spidev_exit	Serial-Interface/spidev.cpp	/^static void __exit spidev_exit(void)$/;"	f	file:
+spidev_fops	Serial-Interface/spidev.cpp	/^static const struct file_operations spidev_fops = {$/;"	v	typeref:struct:file_operations	file:
+spidev_get_ioc_message	Serial-Interface/spidev.cpp	/^spidev_get_ioc_message(unsigned int cmd, struct spi_ioc_transfer __user *u_ioc,$/;"	f	file:
+spidev_init	Serial-Interface/spidev.cpp	/^module_init(spidev_init);$/;"	v
+spidev_init	Serial-Interface/spidev.cpp	/^static int __init spidev_init(void)$/;"	f	file:
+spidev_ioctl	Serial-Interface/spidev.cpp	/^spidev_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:
+spidev_message	Serial-Interface/spidev.cpp	/^static int spidev_message(struct spidev_data *spidev,$/;"	f	file:
+spidev_open	Serial-Interface/spidev.cpp	/^static int spidev_open(struct inode *inode, struct file *filp)$/;"	f	file:
+spidev_probe	Serial-Interface/spidev.cpp	/^static int spidev_probe(struct spi_device *spi)$/;"	f	file:
+spidev_read	Serial-Interface/spidev.cpp	/^spidev_read(struct file *filp, char __user *buf, size_t count, loff_t *f_pos)$/;"	f	file:
+spidev_release	Serial-Interface/spidev.cpp	/^static int spidev_release(struct inode *inode, struct file *filp)$/;"	f	file:
+spidev_remove	Serial-Interface/spidev.cpp	/^static int spidev_remove(struct spi_device *spi)$/;"	f	file:
+spidev_spi_driver	Serial-Interface/spidev.cpp	/^static struct spi_driver spidev_spi_driver = {$/;"	v	typeref:struct:spi_driver	file:
+spidev_sync	Serial-Interface/spidev.cpp	/^spidev_sync(struct spidev_data *spidev, struct spi_message *message)$/;"	f	file:
+spidev_sync_read	Serial-Interface/spidev.cpp	/^spidev_sync_read(struct spidev_data *spidev, size_t len)$/;"	f	file:
+spidev_sync_write	Serial-Interface/spidev.cpp	/^spidev_sync_write(struct spidev_data *spidev, size_t len)$/;"	f	file:
+spidev_write	Serial-Interface/spidev.cpp	/^spidev_write(struct file *filp, const char __user *buf,$/;"	f	file:
+spifd	Serial-Interface/DataLoggerSpi.h	/^        int spifd;$/;"	m	class:DataLoggerSpi
+thread_function1	Main/rpi_main.c	/^void* thread_function1(void* arg) {$/;"	f
+thread_function2	Main/rpi_main.c	/^void* thread_function2(void* arg) {$/;"	f
+thread_function3	Main/rpi_main.c	/^void* thread_function3(void* arg) {$/;"	f
+timing_foot1	Main/rpi_main.c	/^void* timing_foot1() {$/;"	f
+turnOff	Main/Older/HBridge_Control.cpp	/^void HBridge::turnOff() {$/;"	f	class:HBridge
+turnOn	Main/Older/HBridge_Control.cpp	/^void HBridge::turnOn() {$/;"	f	class:HBridge
+tx_buffer	Serial-Interface/spidev.cpp	/^	u8			*tx_buffer;$/;"	m	struct:spidev_data	file:
+users	Serial-Interface/spidev.cpp	/^	unsigned		users;$/;"	m	struct:spidev_data	file:
+vtable	Main/atlas.c	/^	struct Atlas_vtable *vtable;$/;"	m	struct:__anon1	typeref:struct:__anon1::Atlas_vtable	file:
+~Sensor_State	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::~Sensor_State(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
