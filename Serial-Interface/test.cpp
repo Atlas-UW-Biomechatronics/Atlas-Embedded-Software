@@ -1,4 +1,5 @@
-#include "RaspberrySPi.h"
+#include "raspberryspi.h"
+#include "regset.h"
 #include <iostream>
 #include <unistd.h>
 #include <bitset>
@@ -21,27 +22,11 @@ uint32_t SetBit(uint32_t* reg, uint8_t pos)
 
 int main()
 {
-    uint8_t  pos  = 0;
-    uint32_t test = 0x56872244;
-    uint32_t* reg = &test;
-    uint32_t mask = 0x01 << pos;
-    /*
-    cout << "SetBit: " << endl;
-    cout << bitset<32>(test) << endl;
-    cout << bitset<32>(mask) << endl;
-    SETBIT(reg, pos);
-    cout << bitset<32>(*reg) << endl;
-    cout << "ClrBit: " << endl;
-    cout << bitset<32>(test) << endl;
-    cout << bitset<32>(~mask) << endl;
-    CLRBIT(reg, pos);
-    cout << bitset<32>(*reg) << endl;
-    */
-    cout << "ReadBit: " << endl;
-    if (READBIT(reg, pos))
-        cout << "one" << endl;
-    else if (!READBIT(reg, pos))
-        cout << "zero" << endl;
+    uint8_t tes = 213;
+    uint8_t* test = &tes;
+    cout << bitset<8>(*test) << endl;
+    SETREGA(test, 1, 7, BLEN_3);
+    cout << bitset<8>(*test) << endl;
     return 0;
 }
 

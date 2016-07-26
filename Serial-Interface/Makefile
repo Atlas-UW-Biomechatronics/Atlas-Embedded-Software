@@ -1,2 +1,2 @@
-test: RaspberrySPi.h RaspberrySPi.cpp test.cpp
-	g++ -o test RaspberrySPi.cpp test.cpp -I .
+test: raspberryspi.h raspberryspi.cpp test.cpp regset.h
+	g++ -o test raspberryspi.cpp test.cpp -I .
