@@ -1,2 +1,2 @@
-test: raspberryspi.h raspberryspi.cpp test.cpp regset.h
-	g++ -o test raspberryspi.cpp test.cpp -I .
+test: bcm2835peri.h bcm2835peri.cpp test.cpp regops.h
+	g++ -o test bcm2835peri.cpp test.cpp -I .

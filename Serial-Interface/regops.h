@@ -1,3 +1,6 @@
+#ifndef _REGOPS_
+    #define _REGOPS_
+
 /* Bit Masks to clear 1, 2, 3, and 4 bits at once */
 #define BLEN_1 0x01
 #define BLEN_2 0x03
@@ -18,3 +21,8 @@
 /* Set Multiple Bits in a Register */
 #define SETREGV(R, S, V, L) R = (R&~(L<<S))|(V<<S)
 #define SETREGA(R, S, V, L) *R = (*R&~(L<<S))|(V<<S)
+/* Read Multiple Bits in a Register */
+#define READREGV(R, S, L) (R&(L<<S))>>S
+#define READREGA(R, S, L) (*R&(L<<S))>>S
+
+#endif

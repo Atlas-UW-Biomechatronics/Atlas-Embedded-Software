@@ -10,23 +10,63 @@ Atlas_Pressure_Sensor	In Development/Atlas_Touch/Atlas_Touch.hpp	/^class Atlas_P
 Atlas_vtable	Main/atlas.c	/^} Atlas_vtable;/;"	v	typeref:struct:__anon2
 BCM2835_PERI_BASE	Serial-Interface/RaspberrySPi.cpp	6;"	d	file:
 BCM2835_PERI_BASE	Serial-Interface/RaspberrySPi.h	7;"	d
+BCM2835_PERI_BASE	Serial-Interface/bcm2835peri.h	11;"	d
+BCM2835_PERI_BASE	Serial-Interface/raspberryspi.h	7;"	d
+BLEN_1	Serial-Interface/regops.h	5;"	d
+BLEN_1	Serial-Interface/regset.h	2;"	d
+BLEN_2	Serial-Interface/regops.h	6;"	d
+BLEN_2	Serial-Interface/regset.h	3;"	d
+BLEN_3	Serial-Interface/regops.h	7;"	d
+BLEN_3	Serial-Interface/regset.h	4;"	d
+BLEN_4	Serial-Interface/regops.h	8;"	d
+BLEN_4	Serial-Interface/regset.h	5;"	d
 BLOCK_SIZE	Serial-Interface/RaspberrySPi.cpp	9;"	d	file:
 BLOCK_SIZE	Serial-Interface/RaspberrySPi.h	12;"	d
+BLOCK_SIZE	Serial-Interface/bcm2835peri.h	16;"	d
+BLOCK_SIZE	Serial-Interface/raspberryspi.h	12;"	d
 CE0_N	Serial-Interface/RaspberrySPi.h	44;"	d
+CE0_N	Serial-Interface/bcm2835peri.h	70;"	d
+CE0_N	Serial-Interface/raspberryspi.h	48;"	d
 CE1_N	Serial-Interface/RaspberrySPi.h	43;"	d
+CE1_N	Serial-Interface/bcm2835peri.h	69;"	d
+CE1_N	Serial-Interface/raspberryspi.h	47;"	d
+CLEAR	Serial-Interface/bcm2835peri.h	63;"	d
+CLEAR	Serial-Interface/raspberryspi.h	40;"	d
 CLK_OFF	Serial-Interface/RaspberrySPi.h	29;"	d
+CLK_OFF	Serial-Interface/bcm2835peri.h	33;"	d
+CLK_OFF	Serial-Interface/raspberryspi.h	29;"	d
 CLRBITA	Serial-Interface/RaspberrySPi.h	54;"	d
+CLRBITA	Serial-Interface/regops.h	15;"	d
+CLRBITA	Serial-Interface/regset.h	12;"	d
 CLRBITV	Serial-Interface/RaspberrySPi.h	51;"	d
+CLRBITV	Serial-Interface/regops.h	12;"	d
+CLRBITV	Serial-Interface/regset.h	9;"	d
 CPHA	Serial-Interface/RaspberrySPi.h	38;"	d
+CPHA	Serial-Interface/bcm2835peri.h	65;"	d
+CPHA	Serial-Interface/raspberryspi.h	42;"	d
 CPOL	Serial-Interface/RaspberrySPi.h	37;"	d
+CPOL	Serial-Interface/bcm2835peri.h	64;"	d
+CPOL	Serial-Interface/raspberryspi.h	41;"	d
 CS	Serial-Interface/RaspberrySPi.h	39;"	d
+CS	Serial-Interface/bcm2835peri.h	66;"	d
+CS	Serial-Interface/raspberryspi.h	43;"	d
 CSPOL	Serial-Interface/RaspberrySPi.h	36;"	d
+CSPOL	Serial-Interface/bcm2835peri.h	62;"	d
+CSPOL	Serial-Interface/raspberryspi.h	39;"	d
 CS_OFF	Serial-Interface/RaspberrySPi.h	27;"	d
+CS_OFF	Serial-Interface/bcm2835peri.h	31;"	d
+CS_OFF	Serial-Interface/raspberryspi.h	27;"	d
 DATALOGGERSPI_H	Serial-Interface/DataLoggerSpi.h	2;"	d
 DATALOGGERSPI_H	Serial-Interface/Spidev/DataLoggerSpi.h	2;"	d
 DC_OFF	Serial-Interface/RaspberrySPi.h	32;"	d
+DC_OFF	Serial-Interface/bcm2835peri.h	36;"	d
+DC_OFF	Serial-Interface/raspberryspi.h	32;"	d
 DEVICE_H	Main/atlas.h	2;"	d
 DLEN_OFF	Serial-Interface/RaspberrySPi.h	30;"	d
+DLEN_OFF	Serial-Interface/bcm2835peri.h	34;"	d
+DLEN_OFF	Serial-Interface/raspberryspi.h	30;"	d
+DONE	Serial-Interface/bcm2835peri.h	60;"	d
+DONE	Serial-Interface/raspberryspi.h	37;"	d
 DataLoggerSpi	Serial-Interface/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLoggerSpi()$/;"	f	class:DataLoggerSpi
 DataLoggerSpi	Serial-Interface/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLoggerSpi(std::string devPath, uint8_t mode, uint8_t bitsPerWord, uint32_t speed, uint8_t justification)$/;"	f	class:DataLoggerSpi
 DataLoggerSpi	Serial-Interface/DataLoggerSpi.h	/^class DataLoggerSpi{$/;"	c
@@ -34,63 +74,150 @@ DataLoggerSpi	Serial-Interface/Spidev/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLog
 DataLoggerSpi	Serial-Interface/Spidev/DataLoggerSpi.cpp	/^DataLoggerSpi::DataLoggerSpi(std::string devPath, uint8_t mode, uint8_t bitsPerWord, uint32_t speed, uint8_t justification)$/;"	f	class:DataLoggerSpi
 DataLoggerSpi	Serial-Interface/Spidev/DataLoggerSpi.h	/^class DataLoggerSpi{$/;"	c
 FIFO_OFF	Serial-Interface/RaspberrySPi.h	28;"	d
+FIFO_OFF	Serial-Interface/bcm2835peri.h	32;"	d
+FIFO_OFF	Serial-Interface/raspberryspi.h	28;"	d
 FORCE_STOP	Main/rpi_main.c	/^volatile bool FORCE_STOP = false;$/;"	v
 GPCLR0_OFF	Serial-Interface/RaspberrySPi.h	23;"	d
+GPCLR0_OFF	Serial-Interface/bcm2835peri.h	27;"	d
+GPCLR0_OFF	Serial-Interface/raspberryspi.h	23;"	d
 GPCLR1_OFF	Serial-Interface/RaspberrySPi.h	24;"	d
+GPCLR1_OFF	Serial-Interface/bcm2835peri.h	28;"	d
+GPCLR1_OFF	Serial-Interface/raspberryspi.h	24;"	d
 GPFSEL0_OFF	Serial-Interface/RaspberrySPi.h	15;"	d
+GPFSEL0_OFF	Serial-Interface/bcm2835peri.h	19;"	d
+GPFSEL0_OFF	Serial-Interface/raspberryspi.h	15;"	d
 GPFSEL1_OFF	Serial-Interface/RaspberrySPi.h	16;"	d
+GPFSEL1_OFF	Serial-Interface/bcm2835peri.h	20;"	d
+GPFSEL1_OFF	Serial-Interface/raspberryspi.h	16;"	d
 GPFSEL2_OFF	Serial-Interface/RaspberrySPi.h	17;"	d
+GPFSEL2_OFF	Serial-Interface/bcm2835peri.h	21;"	d
+GPFSEL2_OFF	Serial-Interface/raspberryspi.h	17;"	d
 GPFSEL3_OFF	Serial-Interface/RaspberrySPi.h	18;"	d
+GPFSEL3_OFF	Serial-Interface/bcm2835peri.h	22;"	d
+GPFSEL3_OFF	Serial-Interface/raspberryspi.h	18;"	d
 GPFSEL4_OFF	Serial-Interface/RaspberrySPi.h	19;"	d
+GPFSEL4_OFF	Serial-Interface/bcm2835peri.h	23;"	d
+GPFSEL4_OFF	Serial-Interface/raspberryspi.h	19;"	d
 GPFSEL5_OFF	Serial-Interface/RaspberrySPi.h	20;"	d
+GPFSEL5_OFF	Serial-Interface/bcm2835peri.h	24;"	d
+GPFSEL5_OFF	Serial-Interface/raspberryspi.h	20;"	d
 GPFSEL_OFF	Serial-Interface/RaspberrySPi.h	42;"	d
+GPFSEL_OFF	Serial-Interface/raspberryspi.h	46;"	d
+GPIO_CLR	Serial-Interface/bcm2835peri.h	51;"	d
+GPIO_CLR0	Serial-Interface/bcm2835peri.h	49;"	d
+GPIO_CLR1	Serial-Interface/bcm2835peri.h	50;"	d
+GPIO_FSEL	Serial-Interface/bcm2835peri.h	45;"	d
+GPIO_FSEL0	Serial-Interface/bcm2835peri.h	39;"	d
+GPIO_FSEL1	Serial-Interface/bcm2835peri.h	40;"	d
+GPIO_FSEL2	Serial-Interface/bcm2835peri.h	41;"	d
+GPIO_FSEL3	Serial-Interface/bcm2835peri.h	42;"	d
+GPIO_FSEL4	Serial-Interface/bcm2835peri.h	43;"	d
+GPIO_FSEL5	Serial-Interface/bcm2835peri.h	44;"	d
 GPIO_OFF	Serial-Interface/RaspberrySPi.h	9;"	d
+GPIO_OFF	Serial-Interface/bcm2835peri.h	13;"	d
+GPIO_OFF	Serial-Interface/raspberryspi.h	9;"	d
 GPIO_OFFSET	Serial-Interface/RaspberrySPi.cpp	7;"	d	file:
+GPIO_SET	Serial-Interface/bcm2835peri.h	48;"	d
+GPIO_SET0	Serial-Interface/bcm2835peri.h	46;"	d
+GPIO_SET1	Serial-Interface/bcm2835peri.h	47;"	d
 GPSET0_OFF	Serial-Interface/RaspberrySPi.h	21;"	d
+GPSET0_OFF	Serial-Interface/bcm2835peri.h	25;"	d
+GPSET0_OFF	Serial-Interface/raspberryspi.h	21;"	d
 GPSET1_OFF	Serial-Interface/RaspberrySPi.h	22;"	d
+GPSET1_OFF	Serial-Interface/bcm2835peri.h	26;"	d
+GPSET1_OFF	Serial-Interface/raspberryspi.h	22;"	d
 GpioConfig	Serial-Interface/RaspberrySPi.cpp	/^void RaspberrySPi::GpioConfig()$/;"	f	class:RaspberrySPi
+GpioConfig	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::GpioConfig()$/;"	f	class:raspberryspi
 HBridge	Main/Older/HBridge_Control.cpp	/^HBridge::HBridge() {$/;"	f	class:HBridge
 HBridge	Main/Older/HBridge_Control.h	/^class HBridge {$/;"	c
+HIGH	Serial-Interface/bcm2835peri.h	7;"	d
+LOW	Serial-Interface/bcm2835peri.h	8;"	d
 LSB_FIRST	Serial-Interface/DataLoggerSpi.h	15;"	d
 LSB_FIRST	Serial-Interface/Spidev/DataLoggerSpi.h	15;"	d
 LTOH_OFF	Serial-Interface/RaspberrySPi.h	31;"	d
+LTOH_OFF	Serial-Interface/bcm2835peri.h	35;"	d
+LTOH_OFF	Serial-Interface/raspberryspi.h	31;"	d
 Leg	Main/Older/Atlas_Leg.cpp	/^Leg::Leg() {$/;"	f	class:Leg
 Leg	Main/Older/Atlas_Leg.h	/^class Leg { $/;"	c
 MISO	Serial-Interface/RaspberrySPi.h	45;"	d
+MISO	Serial-Interface/bcm2835peri.h	71;"	d
+MISO	Serial-Interface/raspberryspi.h	49;"	d
 MOSI	Serial-Interface/RaspberrySPi.h	46;"	d
+MOSI	Serial-Interface/bcm2835peri.h	72;"	d
+MOSI	Serial-Interface/raspberryspi.h	50;"	d
 MSB_FIRST	Serial-Interface/DataLoggerSpi.h	14;"	d
 MSB_FIRST	Serial-Interface/Spidev/DataLoggerSpi.h	14;"	d
 MULTICONSOLE	Print-Consoles/multiconsole.h	2;"	d
 N_SPI_MINORS	Serial-Interface/spidev.cpp	51;"	d	file:
 RASPBERRYSPI_H	Serial-Interface/RaspberrySPi.h	2;"	d
 READBITA	Serial-Interface/RaspberrySPi.h	58;"	d
+READBITA	Serial-Interface/regops.h	19;"	d
+READBITA	Serial-Interface/regset.h	16;"	d
 READBITV	Serial-Interface/RaspberrySPi.h	56;"	d
+READBITV	Serial-Interface/regops.h	17;"	d
+READBITV	Serial-Interface/regset.h	14;"	d
+READREGA	Serial-Interface/regops.h	26;"	d
+READREGV	Serial-Interface/regops.h	25;"	d
+RXD	Serial-Interface/bcm2835peri.h	59;"	d
+RXD	Serial-Interface/raspberryspi.h	36;"	d
 RaspberrySPi	Serial-Interface/RaspberrySPi.cpp	/^RaspberrySPi::RaspberrySPi()$/;"	f	class:RaspberrySPi
 RaspberrySPi	Serial-Interface/RaspberrySPi.cpp	/^RaspberrySPi::RaspberrySPi(uint32_t* base_addr)$/;"	f	class:RaspberrySPi
 RaspberrySPi	Serial-Interface/RaspberrySPi.cpp	/^RaspberrySPi::RaspberrySPi(void* mapping)$/;"	f	class:RaspberrySPi
 RaspberrySPi	Serial-Interface/RaspberrySPi.cpp	/^class RaspberrySPi $/;"	c	file:
 RaspberrySPi	Serial-Interface/RaspberrySPi.h	/^class RaspberrySPi $/;"	c
+RecieveBytes	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::RecieveBytes(unsigned char *rbuf, uint8_t size)$/;"	f	class:raspberryspi
 RoC	In Development/Atlas_Touch/Atlas_Touch.hpp	/^		int RoC; \/\/value that we get from the function defined in before.$/;"	m	class:Atlas_Pressure_Sensor::SensorState
 SCLK	Serial-Interface/RaspberrySPi.h	47;"	d
+SCLK	Serial-Interface/bcm2835peri.h	73;"	d
+SCLK	Serial-Interface/raspberryspi.h	51;"	d
 SETBITA	Serial-Interface/RaspberrySPi.h	53;"	d
+SETBITA	Serial-Interface/regops.h	14;"	d
+SETBITA	Serial-Interface/regset.h	11;"	d
 SETBITV	Serial-Interface/RaspberrySPi.h	50;"	d
+SETBITV	Serial-Interface/regops.h	11;"	d
+SETBITV	Serial-Interface/regset.h	8;"	d
+SETREGA	Serial-Interface/regops.h	23;"	d
+SETREGA	Serial-Interface/regset.h	20;"	d
+SETREGV	Serial-Interface/regops.h	22;"	d
+SETREGV	Serial-Interface/regset.h	19;"	d
 SPIDEV_MAJOR	Serial-Interface/spidev.cpp	50;"	d	file:
+SPI_CS	Serial-Interface/bcm2835peri.h	54;"	d
+SPI_FIFO	Serial-Interface/bcm2835peri.h	55;"	d
 SPI_MODE_MASK	Serial-Interface/spidev.cpp	68;"	d	file:
 SPI_OFF	Serial-Interface/RaspberrySPi.h	10;"	d
+SPI_OFF	Serial-Interface/bcm2835peri.h	14;"	d
+SPI_OFF	Serial-Interface/raspberryspi.h	10;"	d
 SPI_OFFSET	Serial-Interface/RaspberrySPi.cpp	8;"	d	file:
 SelectSlave	Serial-Interface/RaspberrySPi.cpp	/^void RaspberrySPi::SelectSlave(uint8_t slave) $/;"	f	class:RaspberrySPi
+SelectSlave	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::SelectSlave(uint8_t slave) $/;"	f	class:raspberryspi
+SendBytes	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::SendBytes(unsigned char *tbuf, uint8_t size)$/;"	f	class:raspberryspi
+SendRecieveBytes	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::SendRecieveBytes(unsigned char *rbuf, unsigned char *tbuf, uint8_t size)$/;"	f	class:raspberryspi
 SensorState	In Development/Atlas_Touch/Atlas_Touch.hpp	/^	class SensorState{$/;"	c	class:Atlas_Pressure_Sensor
 Sensor_State	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::Sensor_State(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
 Sensor_State	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::Sensor_State(int nRoC, bool isTouchingNow){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
 SetBit	Serial-Interface/test.cpp	/^uint32_t SetBit(uint32_t* reg, uint8_t pos)$/;"	f
 SpiConfig	Serial-Interface/RaspberrySPi.cpp	/^void RaspberrySPi::SpiConfig()$/;"	f	class:RaspberrySPi
+SpiConfig	Serial-Interface/raspberryspi.cpp	/^void raspberryspi::SpiConfig()$/;"	f	class:raspberryspi
 TA	Serial-Interface/RaspberrySPi.h	35;"	d
+TA	Serial-Interface/bcm2835peri.h	61;"	d
+TA	Serial-Interface/raspberryspi.h	38;"	d
 TEST	Serial-Interface/test.cpp	7;"	d	file:
+TEST	Serial-Interface/test.cpp	8;"	d	file:
+TXD	Serial-Interface/bcm2835peri.h	58;"	d
+TXD	Serial-Interface/raspberryspi.h	35;"	d
 _ATLAS_LEG_	Main/Older/Atlas_Leg.h	4;"	d
+_BCM2835PERI_	Serial-Interface/bcm2835peri.h	2;"	d
 _HBRIDGE_CONTROL_	Main/Older/HBridge_Control.h	4;"	d
+_REGOPS_	Serial-Interface/regops.h	2;"	d
 backward	Main/Older/HBridge_Control.cpp	/^void HBridge::backward() {$/;"	f	class:HBridge
 base_addr	Serial-Interface/RaspberrySPi.cpp	/^        uint32_t *base_addr = (uint32_t*)MAP_FAILED;$/;"	m	class:RaspberrySPi	file:
 base_addr	Serial-Interface/RaspberrySPi.h	/^        volatile uint32_t *base_addr;$/;"	m	class:RaspberrySPi
+base_addr	Serial-Interface/bcm2835peri.h	/^        volatile uint32_t *base_addr;$/;"	m	class:bcm2835peri
+base_addr	Serial-Interface/raspberryspi.h	/^        volatile uint32_t *base_addr;$/;"	m	class:raspberryspi
+bcm2835peri	Serial-Interface/bcm2835peri.cpp	/^bcm2835peri::bcm2835peri()$/;"	f	class:bcm2835peri
+bcm2835peri	Serial-Interface/bcm2835peri.cpp	/^bcm2835peri::bcm2835peri(uint32_t* base_addr)$/;"	f	class:bcm2835peri
+bcm2835peri	Serial-Interface/bcm2835peri.cpp	/^bcm2835peri::bcm2835peri(void* mapping)$/;"	f	class:bcm2835peri
+bcm2835peri	Serial-Interface/bcm2835peri.h	/^class bcm2835peri $/;"	c
 bitsPerWord	Serial-Interface/DataLoggerSpi.h	/^        uint8_t bitsPerWord;$/;"	m	class:DataLoggerSpi
 bitsPerWord	Serial-Interface/Spidev/DataLoggerSpi.h	/^        uint8_t bitsPerWord;$/;"	m	class:DataLoggerSpi
 buf_lock	Serial-Interface/spidev.cpp	/^	struct mutex		buf_lock;$/;"	m	struct:spidev_data	typeref:struct:spidev_data::mutex	file:
@@ -98,6 +225,7 @@ bufsiz	Serial-Interface/spidev.cpp	/^static unsigned bufsiz = 4096;$/;"	v	file:
 changeInResistance	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::changeInResistance(int[] resistance){$/;"	f	class:Atlas_Pressure_Sensor
 changeInResistance	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::changeInResistance(int[] resistance, Sensor_State state*){$/;"	f	class:Atlas_Pressure_Sensor
 cs_reg	Serial-Interface/RaspberrySPi.h	/^        volatile uint32_t *cs_reg;$/;"	m	class:RaspberrySPi
+cs_reg	Serial-Interface/raspberryspi.h	/^        volatile uint32_t *cs_reg;$/;"	m	class:raspberryspi
 currentDateTime	Print-Consoles/multiconsole.h	/^const string currentDateTime() {$/;"	f
 device_entry	Serial-Interface/spidev.cpp	/^	struct list_head	device_entry;$/;"	m	struct:spidev_data	typeref:struct:spidev_data::list_head	file:
 devt	Serial-Interface/spidev.cpp	/^	dev_t			devt;$/;"	m	struct:spidev_data	file:
@@ -105,6 +233,8 @@ forward	Main/Older/HBridge_Control.cpp	/^void HBridge::forward() {$/;"	f	class:H
 getForce	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::getForce(unsigned int resistance, unsigned int voltage){$/;"	f	class:Atlas_Pressure_Sensor
 getRoC	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::getRoC(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
 gpio_addr	Serial-Interface/RaspberrySPi.h	/^        volatile uint32_t *gpio_addr;$/;"	m	class:RaspberrySPi
+gpio_addr	Serial-Interface/bcm2835peri.h	/^        volatile uint32_t *gpio_addr;$/;"	m	class:bcm2835peri
+gpio_addr	Serial-Interface/raspberryspi.h	/^        volatile uint32_t *gpio_addr;$/;"	m	class:raspberryspi
 isForward	Main/Older/HBridge_Control.cpp	/^bool HBridge::isForward() {$/;"	f	class:HBridge
 isForward	Main/Older/HBridge_Control.h	/^	bool isForward;$/;"	m	class:HBridge
 isItTouching	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::Sensor_State::isItTouching(){$/;"	f	class:Atlas_Pressure_Sensor::Sensor_State
@@ -118,13 +248,24 @@ main	Main/rpi_main.c	/^int main (int argc, char argv[]) {$/;"	f
 main	Print-Consoles/testing.cpp	/^int main () {$/;"	f
 main	Serial-Interface/test.cpp	/^int main()$/;"	f
 mapping	Serial-Interface/RaspberrySPi.h	/^        void *mapping;$/;"	m	class:RaspberrySPi
+mapping	Serial-Interface/bcm2835peri.h	/^        void *mapping;$/;"	m	class:bcm2835peri
+mapping	Serial-Interface/raspberryspi.h	/^        void *mapping;$/;"	m	class:raspberryspi
 mode	Serial-Interface/DataLoggerSpi.h	/^        uint8_t mode;$/;"	m	class:DataLoggerSpi
 mode	Serial-Interface/Spidev/DataLoggerSpi.h	/^        uint8_t mode;$/;"	m	class:DataLoggerSpi
 onGound	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::onGound(int resistance){$/;"	f	class:Atlas_Pressure_Sensor
 onGound	In Development/Atlas_Touch/Atlas_Touch.cpp	/^Atlas_Pressure_Sensor::onGound(int resistance, Sensor_State* state){$/;"	f	class:Atlas_Pressure_Sensor
+periaddrset	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::periaddrset()$/;"	f	class:bcm2835peri
 pin1	Main/Older/HBridge_Control.h	/^	int pin1; \/\/an example of a class variable. This can store one analog pin that the HBridge uses to function$/;"	m	class:HBridge
+pinfsel	Serial-Interface/bcm2835peri.cpp	/^inline void bcm2835peri::pinfsel(uint8_t pin, uint8_t func)$/;"	f	class:bcm2835peri
+pinset	Serial-Interface/bcm2835peri.cpp	/^inline void bcm2835peri::pinset(uint8_t pin, uint8_t state)$/;"	f	class:bcm2835peri
 print	Serial-Interface/test.cpp	/^void print(off_t test)$/;"	f
+print32	Serial-Interface/test.cpp	/^void print32(uint32_t reg)$/;"	f
 printToConsole	Print-Consoles/multiconsole.h	/^void printToConsole(string output, ofstream& console) {$/;"	f
+raspberryspi	Serial-Interface/raspberryspi.cpp	/^raspberryspi::raspberryspi()$/;"	f	class:raspberryspi
+raspberryspi	Serial-Interface/raspberryspi.cpp	/^raspberryspi::raspberryspi(uint32_t* base_addr)$/;"	f	class:raspberryspi
+raspberryspi	Serial-Interface/raspberryspi.cpp	/^raspberryspi::raspberryspi(void* mapping)$/;"	f	class:raspberryspi
+raspberryspi	Serial-Interface/raspberryspi.h	/^class raspberryspi $/;"	c
+raspberryspi_H	Serial-Interface/raspberryspi.h	2;"	d
 resistance_	In Development/Atlas_Touch/Atlas_Touch.hpp	/^		int[] resistance_;$/;"	m	class:Atlas_Pressure_Sensor
 rx_buffer	Serial-Interface/spidev.cpp	/^	u8			*rx_buffer;$/;"	m	struct:spidev_data	file:
 setup	Main/Older/Main.c	/^void setup() {$/;"	f
@@ -144,7 +285,10 @@ spiWrite	Serial-Interface/Spidev/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiWrite
 spiWriteRead	Serial-Interface/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiWriteRead(unsigned char *tdata, unsigned char *rdata)$/;"	f	class:DataLoggerSpi
 spiWriteRead	Serial-Interface/Spidev/DataLoggerSpi.cpp	/^int DataLoggerSpi::spiWriteRead(unsigned char *tdata, unsigned char *rdata)$/;"	f	class:DataLoggerSpi
 spi_addr	Serial-Interface/RaspberrySPi.h	/^        volatile uint32_t *spi_addr;$/;"	m	class:RaspberrySPi
+spi_addr	Serial-Interface/bcm2835peri.h	/^        volatile uint32_t *spi_addr;$/;"	m	class:bcm2835peri
+spi_addr	Serial-Interface/raspberryspi.h	/^        volatile uint32_t *spi_addr;$/;"	m	class:raspberryspi
 spi_lock	Serial-Interface/spidev.cpp	/^	spinlock_t		spi_lock;$/;"	m	struct:spidev_data	file:
+spiconfig	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spiconfig()$/;"	f	class:bcm2835peri
 spidev_compat_ioc_message	Serial-Interface/spidev.cpp	/^spidev_compat_ioc_message(struct file *filp, unsigned int cmd,$/;"	f	file:
 spidev_compat_ioctl	Serial-Interface/spidev.cpp	/^spidev_compat_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f	file:
 spidev_compat_ioctl	Serial-Interface/spidev.cpp	578;"	d	file:
@@ -170,6 +314,12 @@ spidev_sync_write	Serial-Interface/spidev.cpp	/^spidev_sync_write(struct spidev_
 spidev_write	Serial-Interface/spidev.cpp	/^spidev_write(struct file *filp, const char __user *buf,$/;"	f	file:
 spifd	Serial-Interface/DataLoggerSpi.h	/^        int spifd;$/;"	m	class:DataLoggerSpi
 spifd	Serial-Interface/Spidev/DataLoggerSpi.h	/^        int spifd;$/;"	m	class:DataLoggerSpi
+spigpioselect	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spigpioselect(uint8_t slave)$/;"	f	class:bcm2835peri
+spipinsconfig	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spipinsconfig()$/;"	f	class:bcm2835peri
+spirecieve	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spirecieve(unsigned char *rbuf, uint8_t size)$/;"	f	class:bcm2835peri
+spiselect	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spiselect(uint8_t slave) $/;"	f	class:bcm2835peri
+spisend	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spisend(unsigned char *tbuf, uint8_t size)$/;"	f	class:bcm2835peri
+spitransfer	Serial-Interface/bcm2835peri.cpp	/^void bcm2835peri::spitransfer(unsigned char *rbuf, unsigned char *tbuf, uint8_t size)$/;"	f	class:bcm2835peri
 thread_function1	Main/rpi_main.c	/^void* thread_function1(void* arg) {$/;"	f
 thread_function2	Main/rpi_main.c	/^void* thread_function2(void* arg) {$/;"	f
 thread_function3	Main/rpi_main.c	/^void* thread_function3(void* arg) {$/;"	f

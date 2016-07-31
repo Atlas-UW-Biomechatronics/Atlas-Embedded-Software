@@ -9,24 +9,18 @@
 
 using namespace std;
 
-void print(off_t test)
+void print32(uint32_t reg)
 {
-    cout << test << endl;
+    cout << "33222222222211111111110000000000" << endl;
+    cout << "10987654321098765432109876543210" << endl;
+    cout << bitset<32>(reg) << endl;
+    cout << "--------------------------------" << endl;
 }
-
-uint32_t SetBit(uint32_t* reg, uint8_t pos)
-{
-    *reg = *reg | (0x01<<pos);
-    return *reg;
-}
-
 int main()
 {
-    uint8_t tes = 213;
-    uint8_t* test = &tes;
-    cout << bitset<8>(*test) << endl;
-    SETREGA(test, 1, 7, BLEN_3);
-    cout << bitset<8>(*test) << endl;
+    uint32_t test32 = 0x8571235;
+    print32(test32);
+    cout << (READREGV(test32, 9 , BLEN_2)) << endl;;
     return 0;
 }
 
