@@ -10,7 +10,7 @@ CFLAGS = -mmcu=$(MCU) -std=c11 -Wall -Wextra -finline-functions
 
 BUILDDIR = build
 
-OBJS = $(addprefix $(BUILDDIR)/, main.o pins.o led.o uart.o )
+OBJS = $(addprefix $(BUILDDIR)/, main.o pins.o led.o )
 
 all: $(BUILDDIR) $(BUILDDIR)/main.hex
 

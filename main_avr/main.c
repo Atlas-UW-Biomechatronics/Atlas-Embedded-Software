@@ -1,6 +1,5 @@
 #include "pins.h"
 #include "led.h"
-#include "uart.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -22,8 +21,6 @@ void initialize()
 	DDRD = 0xFC;	//set bits 2-7 on PORTD as output, clear 0,1 
 	PORTD |= 0x0F;	//enable pull-up resistors at pins 0,1,2,3
 	PORTD &= ~0xF0;	//clear bits 4-7
-
-	init_UART(UBRR_UART);
 
 	//Task scheduler timer (Used for LED flashing and thermal monitoring)
 	TCCR0A |= (1 << WGM01); // Configure timer 0 for CTC mode
@@ -54,7 +51,7 @@ ISR(TIMER0_COMPA_vect)
 {
 	static uint8_t cycle_count = 1;
 
-	
+
 
 	cycle_count++;
 }
