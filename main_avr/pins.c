@@ -1,0 +1,13 @@
+#include "pins.h"
+//#include "stdbool.h"
+
+ASSIGN_PIN(LED_GREEN, B, 5)
+ASSIGN_PIN(LED_RED, B, 4)
+ASSIGN_PIN(LED_YELLOW, B, 0)
+
+ASSIGN_PIN(MOTOR_GATE_1, D, 7)
+ASSIGN_PIN(MOTOR_GATE_2, D, 6)
+ASSIGN_PIN(MOTOR_GATE_3, D, 5)
+ASSIGN_PIN(MOTOR_GATE_4, D, 4)
+ASSIGN_PIN(MOTOR_GATE_5, B, 3) // This is on PORTB, not PORTD like the others
+ASSIGN_PIN(MOTOR_GATE_6, B, 2) // This is on PORTB, not PORTD like the others
